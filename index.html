@@ -82,10 +82,10 @@
     <section id="photos" class="bg dark">
       <h1 style="display: none;">Photos</h1>
       <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
-        <img src="assets/images/IMG_0093.jpg" alt="tulip">
-        <img src="assets/images/IMG_0058.jpg" alt="grapes">
-        <img src="assets/images/IMG_0056.jpg" alt="wolf">
-        <img src="assets/images/IMG_0054.jpg" alt="sea">
+        <img src="assets/images/home-backyard-in-fall.jpg" alt="Backyard in fall">
+        <img src="assets/images/home-living-room.jpg" alt="Living room">
+        <img src="assets/images/home-staircase.jpg" alt="Staircase">
+        <img src="assets/images/home-wolf-range.jpg" alt="Wolf gas range">
       </div>
     </section>
 
@@ -402,6 +402,18 @@
           easing: "easeInOutQuint"
         });
       },false);
+    </script>
+
+    <!-- schema structured data -->
+    <script type="application/ld+json">
+      {
+        "@context" : "http://schema.org",
+        "@type" : "SingleFamilyResidence",
+        "name" : "The Mudville Home",
+        "photo": "http://mudville.blackcoffeeshoppe.com/assets/images/home.jpg",
+        "description": "Nestled in the historic Mudville neighborhood of Holliston, MA, this classic Colonial home has been lovingly restored and renovated by expert craftsmen.",
+        "url" : "http://mudville.blackcoffeeshoppe.com"
+      }
     </script>
 
   </body>
