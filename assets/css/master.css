@@ -163,12 +163,12 @@ header {
 
 @font-face {
   font-family: 'mudville';
-  src: url('../font/mudville.eot?43636143');
-  src: url('../font/mudville.eot?43636143#iefix') format('embedded-opentype'),
-       url('../font/mudville.woff2?43636143') format('woff2'),
-       url('../font/mudville.woff?43636143') format('woff'),
-       url('../font/mudville.ttf?43636143') format('truetype'),
-       url('../font/mudville.svg?43636143#mudville') format('svg');
+  src: url('../font/mudville.eot?44732601');
+  src: url('../font/mudville.eot?44732601#iefix') format('embedded-opentype'),
+    url('../font/mudville.woff2?44732601') format('woff2'),
+    url('../font/mudville.woff?44732601') format('woff'),
+    url('../font/mudville.ttf?44732601') format('truetype'),
+    url('../font/mudville.svg?44732601#mudville') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -182,7 +182,7 @@ header {
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
 
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -194,7 +194,7 @@ header {
 
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: 0.2em;
 
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
@@ -203,11 +203,14 @@ header {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
- 
-.icon-btn-close-modal:before { content: '\e800'; }
-.icon-btn-email:before { content: '\e801'; }
-.icon-btn-google-plus:before { content: '\e802'; }
-.icon-btn-pinterest:before { content: '\e803'; }
+
+.icon-btn-close-modal:before {content: '\e800';}
+.icon-btn-email:before {content: '\e801';}
+.icon-btn-facebook:before {content: '\e802';}
+.icon-btn-google-plus:before {content: '\e803';}
+.icon-btn-linkedin:before {content: '\e804';}
+.icon-btn-pinterest:before {content: '\e805';}
+.icon-btn-twitter:before {content: '\e806';}
 
 
 /* ------------------------------------------
@@ -768,11 +771,79 @@ footer {
   background-color: #067f3c;
 }
 
-.info-bar {
+.share-bar {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
+
+.social {padding: 0 0 2em 0;}
+
+.social p {
+  padding: 0 0 1em;
+  width: initial;
+  font-size: 0.75em;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.social ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: inherit;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social ul li a span.icon-btn-facebook,
+.social ul li a span.icon-btn-twitter,
+.social ul li a span.icon-btn-linkedin,
+.social ul li a span.icon-btn-pinterest,
+.social ul li a span.icon-btn-google-plus,
+.social ul li a span.icon-btn-email {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: "mudville";
+  font-size: 1.25em;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.social ul li a:hover, .social ul li a:focus,
+.social ul li a:hover span.icon-btn-facebook, .social ul li a:focus span.icon-btn-facebook,
+.social ul li a:hover span.icon-btn-twitter, .social ul li a:focus span.icon-btn-twitter,
+.social ul li a:hover span.icon-btn-pinterest, .social ul li a:focus span.icon-btn-pinterest,
+.social ul li a:hover span.icon-btn-google-plus, .social ul li a:focus span.icon-btn-google-plus,
+.social ul li a:hover span.icon-btn-linkedin, .social ul li a:focus span.icon-btn-linkedin,
+.social ul li a:hover span.icon-btn-email, .social ul li a:focus span.icon-btn-email {color: #000000;}
+
+.email {padding: 1em 0 0;}
+
+.email p {
+  padding: 0;
+  font-size: 0.75em;
+  text-align: center;
+  text-transform: none;
+  color: #ffffff;
+}
+
+.email p a {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.email p a:hover, .email p a:focus {color: #000000;}
 
 .weather {
   display: flex;
@@ -836,65 +907,18 @@ p.copyright {
   color: #ffffff;
 }
 
-.social {
-  margin: 1em 0;
-}
-
-.social p {
-  padding: 0 0 0.5em;
-  width: initial;
-  font-size: 0.75em;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.social ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: inherit;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.social ul li a span.icon-btn-email,
-.social ul li a span.icon-btn-pinterest,
-.social ul li a span.icon-btn-google-plus {
-  display: block;
-  margin: 0;
-  padding: 0 0.5em;
-  font-family: "mudville";
-  font-size: 1.5em;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  text-align: center;
-  color: #ffffff;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-.social ul li a:hover, .social ul li a:focus,
-.social ul li a:hover span.icon-btn-email, .social ul li a:focus span.icon-btn-email,
-.social ul li a:hover span.icon-btn-email, .social ul li a:focus span.icon-btn-email,
-.social ul li a:hover span.icon-btn-pinterest, .social ul li a:focus span.icon-btn-pinterest,
-.social ul li a:hover span.icon-btn-google-plus, .social ul li a:focus span.icon-btn-google-plus {color: #000000;}
-
 @media (min-width: 30em) {
 footer {padding: 2em 4em;}
-.info-bar {
+.share-bar {
   align-items: center;
-  flex-direction: row-reverse;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
 }
+.social {padding: 0;}
+.social ul li {padding: 0 1em;}
 .weather {
   width: 10em;
   margin: 0 0 0 1em;
   padding: 0;
-}
-.social ul {margin: 0;}}
+}}
